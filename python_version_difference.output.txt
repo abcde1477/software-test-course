@@ -1,0 +1,46 @@
+#########################################################################
+Python version: 3.5.3
+---------
+dict test:
+SHA-256: 43cec23af234640926cbe6a8cf01ee399e86203c2dcbd0428dd9f99182609c99
+---------
+default protocol test
+default pickle protocol: 3
+SHA-256: ba8c7c4512eb4a5ffc1653dd8d15976320053fb19d1e6b01322bb929abe85401
+
+
+#########################################################################
+Python version: 3.6.8
+---------
+dict test:
+SHA-256: 4c394ffb984ff92ca1c2262a3f261a75b42dd8113a38ab0aa6a4401b9793ad75
+---------
+default protocol test
+default pickle protocol: 3
+SHA-256: ba8c7c4512eb4a5ffc1653dd8d15976320053fb19d1e6b01322bb929abe85401
+
+#########################################################################
+Python version: 3.7.9
+---------
+dict test:
+SHA-256: 4c394ffb984ff92ca1c2262a3f261a75b42dd8113a38ab0aa6a4401b9793ad75
+---------
+default protocol test
+default pickle protocol: 3
+SHA-256: ba8c7c4512eb4a5ffc1653dd8d15976320053fb19d1e6b01322bb929abe85401
+
+
+#########################################################################
+Python version: 3.8.10
+---------
+dict test:
+SHA-256: 4c394ffb984ff92ca1c2262a3f261a75b42dd8113a38ab0aa6a4401b9793ad75
+---------
+default protocol test
+default pickle protocol: 4
+SHA-256: c41d85349721ffc800d8c7677109aded512bab46ff05a70a9132b4597eafbe4c
+
+
+/////////////////////////////////////////////////////////////////////////
+The inconsistency in the dict test occurs between versions 3.5 and 3.6
+The inconsistency in the default protocol test occurs between versions 3.7 and 3.8.

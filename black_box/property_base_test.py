@@ -8,16 +8,12 @@ from hypothesis.strategies import (
 import random
 
 
-# 自定义类：包含非确定性 __getstate__
 class RandomWrapper:
     def __init__(self):
         self.value = random.random()
 
     def __getstate__(self):
-        return {"value": random.random()}  # 不同序列化结果
-
-
-
+        return {"value": random.random()} 
 
 def is_hashable(x):
     try:
@@ -26,7 +22,6 @@ def is_hashable(x):
     except Exception:
         return False
     
-# 构造通用对象（包括随机类 / NaN / inf / 集合）
 general_object = recursive(
     base=one_of(
         integers(),
@@ -47,7 +42,7 @@ general_object = recursive(
 )
 
 
-# 手动运行 Hypothesis 测试（不依赖 pytest）
+
 @given(obj=general_object)
 @settings(max_examples=500, verbosity=Verbosity.verbose)
 def run_test(obj):

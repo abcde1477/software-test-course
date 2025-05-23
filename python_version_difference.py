@@ -9,7 +9,7 @@ def show_protocol_message():
 def protocol_in_different_version():
     show_protocol_message()
     data_str = "ABCD"
-    print("SHA-256:", hashlib.sha256(pickle.dumps(data_str, protocol=4)).hexdigest())
+    print("SHA-256:", hashlib.sha256(pickle.dumps(data_str)).hexdigest())
 
 def dict_in_different_version():
     print("dict test:")

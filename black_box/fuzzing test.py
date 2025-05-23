@@ -4,8 +4,6 @@ import random
 import string
 import datetime
 import types
-import threading
-import csv
 from collections import OrderedDict
 
 # 设置种子保证跨平台一致性（使得每次运行结果一致）

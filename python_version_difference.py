@@ -4,7 +4,7 @@ import platform
 
 def show_protocol_message():
     print("default protocol test")
-    print(f"default pickle protocol:{pickle.DEFAULT_PROTOCOL}")
+    print("default pickle protocol:",pickle.DEFAULT_PROTOCOL)
 
 def protocol_in_different_version():
     show_protocol_message()

@@ -20,6 +20,8 @@ def dict_in_different_version():
 
 if __name__ =="__main__":
     print("Python version:", platform.python_version())
+    print("---------")
     dict_in_different_version()
+    print("---------")
     protocol_in_different_version()
     
